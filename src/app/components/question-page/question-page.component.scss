@@ -4,13 +4,13 @@
     gap: 10px;
 
     .title-container {
-        border: 1px solid rgb(250, 112, 112);
-        box-shadow: 0px 1px 20px 1px #fd8080;
+        border: 1px solid rgb(102, 43, 43);
+        box-shadow: -6px 3px 15px 1px #975050;
         border-radius: 10px;
 
         .title {
-            color: rgb(252, 34, 34);
-            font-size: 40px;
+            color: rgb(124, 76, 76);
+            font-size: 50px;
             display: flex;
             font-weight: 600;
             justify-content: center;
@@ -18,14 +18,56 @@
     }
 
     .question-container {
+        margin-top: 25px;
         padding: 25px;
-        font-size: 20px;
-        border: 2px solid rgb(179, 177, 177);
+        border: 1px solid rgb(102, 43, 43);
         border-radius: 10px;
+        height: 100px;
+        display: flex;
+        width: 256px;
+        justify-content: center;
+        align-items: center;
+        background: rgb(247, 223, 223);
+        
+        .question {
+            font-size: 25px;
+            line-height: 30px;
+            font-weight: 500;
+        }
+    }
+
+    .answer-container {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        gap: 7px;
+        justify-content: center;
+        
+        .answer {
+            border: 1px solid rgb(102, 43, 43);
+            background: rgb(247, 223, 223);
+            border-radius: 10px;
+            padding: 10px;
+            
+            h5 {
+                font-weight: 500;
+                font-size: 25px;
+            }
+        }
+    }
+
+    .confirm-container {
         display: flex;
         justify-content: center;
-        min-height: 200px;
-        align-items: center;
-        line-height: 30px;
+
+        .confirm {
+            border: 1px solid rgb(102, 43, 43);
+            background-color: rgb(102, 43, 43);
+            color: white;
+            font-size: 30px;
+            padding: 10px;
+            width: 400px;
+            border-radius: 10px;
+        }
     }
 }
