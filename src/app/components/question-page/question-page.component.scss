@@ -5,7 +5,6 @@
 
     .title-container {
         border: 1px solid rgb(102, 43, 43);
-        box-shadow: -6px 3px 15px 1px #975050;
         border-radius: 10px;
 
         .title {
@@ -24,10 +23,9 @@
         border-radius: 10px;
         height: 100px;
         display: flex;
-        width: 256px;
         justify-content: center;
         align-items: center;
-        background: rgb(247, 223, 223);
+        background: #ffff;
         
         .question {
             font-size: 25px;
@@ -53,6 +51,11 @@
                 font-weight: 500;
                 font-size: 25px;
             }
+
+            &:active {
+                background: rgb(243 205 205);
+                box-shadow: inset 0px 1px 6px 0px rgb(141, 118, 118);;
+            }
         }
     }
 
@@ -68,6 +71,12 @@
             padding: 10px;
             width: 400px;
             border-radius: 10px;
+            box-shadow: 3px 0px 20px 3px #977a7a;
+            
+            &:active {
+                box-shadow: inset 1px 1px 20px 3px #393939;
+                background-color: rgb(121, 62, 62);
+            }
         }
     }
 }

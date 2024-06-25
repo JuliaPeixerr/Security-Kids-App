@@ -4,14 +4,13 @@
     </div>
     <div class="question-container">
         <h4 class="question">
-            Em qual continente está localizado o Brasil?
+            {{randomQuestion?.description}}
         </h4>
     </div>
     <div class="answer-container">
-        <div class="answer"><h5>América</h5></div> <!-- *ngfor as quatro divs -->
-        <div class="answer"><h5>África</h5></div>
-        <div class="answer"><h5>Europa</h5></div>
-        <div class="answer"><h5>Oceania</h5></div>
+        <div class="answer" *ngFor="let answer of answersResult" (click)="confirm(answer)">
+            <h5>{{answer?.description}}</h5>
+        </div>
     </div>
     <div class="confirm-container">
         <button class="confirm">Confirmar</button>
