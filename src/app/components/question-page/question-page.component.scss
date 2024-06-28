@@ -6,9 +6,12 @@
     .title-container {
         border: 1px solid rgb(102, 43, 43);
         border-radius: 10px;
+        background: #cf8a7a;
+        margin: 18px 19px;
 
         .title {
-            color: rgb(124, 76, 76);
+            background: #cf8a7a;
+            color: rgb(87 49 49);
             font-size: 50px;
             display: flex;
             font-weight: 600;
@@ -17,7 +20,6 @@
     }
 
     .question-container {
-        margin-top: 25px;
         padding: 25px;
         border: 1px solid rgb(102, 43, 43);
         border-radius: 10px;
@@ -25,9 +27,11 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        background: #ffff;
+        background: #cf8a7a;
+        margin: 6px 19px;
         
         .question {
+            background: #cf8a7a;
             font-size: 25px;
             line-height: 30px;
             font-weight: 500;
@@ -40,21 +44,26 @@
         flex-wrap: wrap;
         gap: 7px;
         justify-content: center;
-        
+        margin: 6px 19px;
+
         .answer {
             border: 1px solid rgb(102, 43, 43);
             background: rgb(247, 223, 223);
             border-radius: 10px;
             padding: 10px;
+            height: 50px;
             
             h5 {
+                background: rgb(247, 223, 223);
                 font-weight: 500;
                 font-size: 25px;
+                top: -30px;
+                position: relative;            
             }
-
+            
             &:active {
-                background: rgb(243 205 205);
-                box-shadow: inset 0px 1px 6px 0px rgb(141, 118, 118);;
+                background: rgb(247, 223, 223);
+                box-shadow: inset -7px 8px 11px 0px rgb(141, 118, 118);
             }
         }
     }
@@ -62,6 +71,7 @@
     .confirm-container {
         display: flex;
         justify-content: center;
+        margin: 6px 19px;
 
         .confirm {
             border: 1px solid rgb(102, 43, 43);
@@ -71,7 +81,6 @@
             padding: 10px;
             width: 400px;
             border-radius: 10px;
-            box-shadow: 3px 0px 20px 3px #977a7a;
             
             &:active {
                 box-shadow: inset 1px 1px 20px 3px #393939;
