@@ -1,49 +1,72 @@
 <div class="config-container">
-    <h2>CONFIGURAÇÕES</h2>
-  
-    <!-- <div class="section">
-      <h3>Configurações de conta</h3>
-      <div class="option">
-        <input type="checkbox" id="trocar-senha">
-        <label for="trocar-senha">Trocar minha senha</label>
-      </div>
-      <div class="option">
-        <input type="checkbox" id="restaurar-aparelho">
-        <label for="restaurar-aparelho">Restaurar aparelho</label>
-      </div>
-    </div> -->
-  
-    <div class="section">
-      <h3>Configurações dos pais/admin</h3>
-      <div class="option">
-        <input type="checkbox" id="restringir-horario">
-        <label for="restringir-horario">Restringir horário</label>
-      </div>
-      <div class="option">
-        <input type="checkbox" id="restringir-aplicativos">
-        <label for="restringir-aplicativos">Restringir aplicativos</label>
-      </div>
-      <div class="option">
-        <input type="checkbox" id="configuracoes-perguntas">
-        <label for="configuracoes-perguntas">Configurações das perguntas</label>
-      </div>
+  <h2>CONFIGURAÇÕES</h2>
+  <div class="section">
+    <h3>Configurações dos pais/admin</h3>
+    <div class="option">
+      <input type="checkbox" id="restringir-horario">
+      <label for="restringir-horario">Restringir horário</label>
     </div>
-  
-    <div class="section">
-      <h3>Relógio e horário</h3>
-      <div class="option">
-        <input type="checkbox" id="mudar-fuso">
-        <label for="mudar-fuso">Mudar Fuso</label>
-      </div>
+    <div class="option">
+      <input type="checkbox" id="restringir-aplicativos">
+      <label for="restringir-aplicativos">Restringir aplicativos</label>
     </div>
-  
-    <div class="section">
-      <h3>Temas e aplicativos liberados</h3>
-      <div class="option" *ngFor="let app of apps">
-        <input type="checkbox" id="{{app.id}}">
-        <label>{{app.nome}}</label>
-      </div>
+    <div class="option">
+      <input type="checkbox" id="configuracoes-perguntas">
+      <label for="configuracoes-perguntas">Configurações das perguntas</label>
     </div>
-    <button >Confirmar</button>
   </div>
-  
+
+  <div class="section">
+    <h3>Localização em tempo real</h3>
+    <div class="option">
+      <input type="checkbox" id="mudar-fuso">
+      <label for="mudar-fuso">Sim</label>
+      <input type="checkbox" id="mudar-fuso">
+      <label for="mudar-fuso">Não</label>
+    </div>
+  </div>
+
+  <div class="section">
+    <h3>Temas e aplicativos liberados</h3>
+    <div class="option" *ngFor="let app of apps">
+      <input type="checkbox" id="{{app.id}}">
+      <label>{{app.nome}}</label>
+    </div>
+  </div>
+
+  <div class="section">
+    <h3>Contatos de Emergencia</h3>
+    <div class="option" *ngFor="let app of apps">
+      //exibir contatos de emergencia
+      <input type="checkbox" id="{{app.id}}">
+      <label>{{app.nome}}</label>
+    </div>
+  </div>
+
+  <div class="section">
+    <h3>Configurações das Perguntas</h3>
+    <div class="option">
+      <div class="option">
+        <label>Escreva a pergunta: </label>
+        <input type="text" class="inpt" id="perguntaInpt">
+      </div>
+      <div class="option">
+        <label>Escreva a primeira opção: </label>
+        <input type="text" class="inpt" id="perguntaInpt">
+      </div>
+      <div class="option">
+        <label>Escreva a Segunda opção: </label>
+        <input type="text" class="inpt" id="perguntaInpt">
+      </div>
+      <div class="option">
+        <label>Escreva a Terceira opção: </label>
+        <input type="text" class="inpt" id="perguntaInpt">
+      </div>
+      <div class="option">
+        <label>Escreva a Quarta opção: </label>
+        <input type="text" class="inpt" id="perguntaInpt">
+      </div>
+    </div>
+  </div>
+  <button>Confirmar</button>
+</div>
