@@ -1,14 +1,14 @@
 import { CommonModule } from '@angular/common';
+import { IphonePageComponent } from './iphone-page.component';
 import { NgModule } from '@angular/core';
-import { QuestionPageComponent } from './question-page.component';
 import { RouterModule } from '@angular/router';
 
 @NgModule({
-    declarations: [QuestionPageComponent],
-    exports: [QuestionPageComponent],
+    declarations: [IphonePageComponent],
+    exports: [IphonePageComponent],
     imports: [
         CommonModule,
         RouterModule
     ]
 })
-export class QuestionPageComponentModule { }
+export class IphonePageComponentModule { }

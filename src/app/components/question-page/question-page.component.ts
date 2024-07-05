@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 import { Answer, Question, answers, questions } from 'src/app/domain';
 
 @Component({
@@ -10,7 +11,9 @@ export class QuestionPageComponent implements OnInit {
     randomQuestion?: Question;
     answersResult: Answer[] = [];
 
-    constructor() { }
+    constructor(
+        private router: Router
+    ) { }
 
     ngOnInit() {
         this.getRandomQuestion();
@@ -31,7 +34,7 @@ export class QuestionPageComponent implements OnInit {
         console.log(answer);
 
         if (answer.rigth) {
-            // notification sucesso
+            this.router.navigate(['']);
         }
         else {
             // notification errou

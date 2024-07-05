@@ -1,9 +1,8 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { QuestionPageComponentModule } from './components';
+import { IphonePageComponentModule, QuestionPageComponentModule } from './components';
 import { ConfigPageComponentModule } from './components/config-page/config-page.module';
 
 @NgModule({
@@ -14,7 +13,8 @@ import { ConfigPageComponentModule } from './components/config-page/config-page.
     BrowserModule,
     AppRoutingModule,
     QuestionPageComponentModule,
-    ConfigPageComponentModule
+    ConfigPageComponentModule,
+    IphonePageComponentModule
   ],
   providers: [],
   bootstrap: [AppComponent]

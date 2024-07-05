@@ -69,7 +69,7 @@ export const answers: Answer[] = [
         id: 6,
         description: "Mel",
         questionCode: 2,
-        rigth: false
+        rigth: true
     },
     {
         id: 7,
@@ -88,7 +88,7 @@ export const answers: Answer[] = [
         id: 9,
         description: "Emília",
         questionCode: 3,
-        rigth: false
+        rigth: true
     },
     {
         id: 10,
@@ -131,14 +131,14 @@ export const answers: Answer[] = [
         id: 16,
         description: "chuva",
         questionCode: 4,
-        rigth: false
+        rigth: true
     },
 
     {
         id: 17,
         description: "5",
         questionCode: 5,
-        rigth: false
+        rigth: true
     },
     {
         id: 18,
