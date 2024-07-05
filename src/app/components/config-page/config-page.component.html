@@ -7,10 +7,6 @@
       <label for="restringir-horario">Restringir horário</label>
     </div>
     <div class="option">
-      <input type="checkbox" id="restringir-aplicativos">
-      <label for="restringir-aplicativos">Restringir aplicativos</label>
-    </div>
-    <div class="option">
       <input type="checkbox" id="configuracoes-perguntas">
       <label for="configuracoes-perguntas">Configurações das perguntas</label>
     </div>
@@ -36,37 +32,10 @@
 
   <div class="section">
     <h3>Contatos de Emergencia</h3>
-    <div class="option" *ngFor="let app of apps">
-      //exibir contatos de emergencia
-      <input type="checkbox" id="{{app.id}}">
-      <label>{{app.nome}}</label>
+    <div class="option" *ngFor="let contato of contatos">
+      <input type="checkbox" id="{{contato.id}}">
+      <label>{{contato.nome}}: {{contato.numero}}</label>
     </div>
   </div>
-
-  <div class="section">
-    <h3>Configurações das Perguntas</h3>
-    <div class="option">
-      <div class="option">
-        <label>Escreva a pergunta: </label>
-        <input type="text" class="inpt" id="perguntaInpt">
-      </div>
-      <div class="option">
-        <label>Escreva a primeira opção: </label>
-        <input type="text" class="inpt" id="perguntaInpt">
-      </div>
-      <div class="option">
-        <label>Escreva a Segunda opção: </label>
-        <input type="text" class="inpt" id="perguntaInpt">
-      </div>
-      <div class="option">
-        <label>Escreva a Terceira opção: </label>
-        <input type="text" class="inpt" id="perguntaInpt">
-      </div>
-      <div class="option">
-        <label>Escreva a Quarta opção: </label>
-        <input type="text" class="inpt" id="perguntaInpt">
-      </div>
-    </div>
-  </div>
-  <button>Confirmar</button>
+  <button (click)="gravar()">Salvar</button>
 </div>
