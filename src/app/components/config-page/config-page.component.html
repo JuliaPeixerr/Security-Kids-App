@@ -1,3 +1,41 @@
-<div>
-    simm
+<div class="config-container">
+  <h2>CONFIGURAÇÕES</h2>
+  <div class="section">
+    <h3>Configurações dos pais/admin</h3>
+    <div class="option">
+      <input type="checkbox" id="restringir-horario">
+      <label for="restringir-horario">Restringir horário</label>
+    </div>
+    <div class="option">
+      <input type="checkbox" id="configuracoes-perguntas">
+      <label for="configuracoes-perguntas">Configurações das perguntas</label>
+    </div>
+  </div>
+
+  <div class="section">
+    <h3>Localização em tempo real</h3>
+    <div class="option">
+      <input type="checkbox" id="mudar-fuso">
+      <label for="mudar-fuso">Sim</label>
+      <input type="checkbox" id="mudar-fuso">
+      <label for="mudar-fuso">Não</label>
+    </div>
+  </div>
+
+  <div class="section">
+    <h3>Temas e aplicativos liberados</h3>
+    <div class="option" *ngFor="let app of apps">
+      <input type="checkbox" id="{{app.id}}">
+      <label>{{app.nome}}</label>
+    </div>
+  </div>
+
+  <div class="section">
+    <h3>Contatos de Emergencia</h3>
+    <div class="option" *ngFor="let contato of contatos">
+      <input type="checkbox" id="{{contato.id}}">
+      <label>{{contato.nome}}: {{contato.numero}}</label>
+    </div>
+  </div>
+  <button (click)="gravar()">Salvar</button>
 </div>
