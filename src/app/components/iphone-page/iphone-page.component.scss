@@ -1,16 +1,28 @@
 img {
     max-width: 100%;
     height: auto;
-    bottom: 33px;
     position: relative;
     object-fit: cover;
     z-index: 0;
+    width: 415px;
+    bottom: 30px;
+}
+
+.hidden-container {
+    display: flex;
+    flex-direction: row;
 }
 
 .hidden-question {
-    background: red
+    // background: red;
+    width: 200px;
+    height: 1200px;
+    z-index: 1;
 }
 
 .hidden-config {
-    background: blue;
+    // background: blue;
+    width: 200px;
+    height: 1200px;
+    z-index: 1;
 }
