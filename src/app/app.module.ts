@@ -4,6 +4,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { IphonePageComponentModule, QuestionPageComponentModule } from './components';
 import { ConfigPageComponentModule } from './components/config-page/config-page.module';
+import { BlockedPageComponentModule } from './components/blocked-page';
 
 @NgModule({
   declarations: [
@@ -14,7 +15,8 @@ import { ConfigPageComponentModule } from './components/config-page/config-page.
     AppRoutingModule,
     QuestionPageComponentModule,
     ConfigPageComponentModule,
-    IphonePageComponentModule
+    IphonePageComponentModule,
+    BlockedPageComponentModule
   ],
   providers: [],
   bootstrap: [AppComponent]

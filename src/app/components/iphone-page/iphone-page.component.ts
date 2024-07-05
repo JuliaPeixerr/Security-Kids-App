@@ -13,7 +13,7 @@ export class IphonePageComponent implements OnInit {
     ) { }
 
     ngOnInit() {
-        this.timeout();
+        // this.timeout();
     }
 
     private timeout() {

@@ -37,7 +37,7 @@ export class QuestionPageComponent implements OnInit {
             this.router.navigate(['']);
         }
         else {
-            // notification errou
+            this.router.navigate(['block']);
         }
     }
 }
