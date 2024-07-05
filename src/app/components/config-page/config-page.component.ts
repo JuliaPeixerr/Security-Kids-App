@@ -11,12 +11,13 @@ import { Contatos } from "src/app/domain/contatos";
 })
 
 export class ConfigPageComponent implements OnInit {
-
     apps: Aplicativos[] = [];
     contatos: Contatos[] = [];
+
     constructor(
         private router: Router
     ) { }
+
     ngOnInit(): void {
         this.getApps();
         this.getNumbers();

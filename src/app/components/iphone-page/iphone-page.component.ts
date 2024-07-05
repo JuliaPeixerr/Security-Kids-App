@@ -19,6 +19,10 @@ export class IphonePageComponent implements OnInit {
     private timeout() {
         setTimeout(() => {
             this.router.navigate(['question']);
-        }, 10000);
+        }, 20000);
+    }
+
+    config() {
+        this.router.navigate(['config']);
     }
 }
